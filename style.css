@@ -72,7 +72,8 @@ body{
 .rules_block{
     flex-direction: column;
     display: flex;
-    height: 325px;
+    min-height: 150px;
+    max-height: 325px;
     background-color: rgb(9, 9, 9);
     border-radius: 25px;
 }
