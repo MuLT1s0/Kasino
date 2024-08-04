@@ -7,8 +7,28 @@ var admin_btn = document.getElementById('admin_btn')
 
 //Пробная версия защиты
 if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    // Если юзер не заходит с мобильного устройства, перенаправляем на другую страницу или показываем сообщение
-    window.location.href = "https://www.google.com/"; // Раскомментируйте, чтобы перенаправить на другую страницу
+    // Находим элемент с id "Mobile"
+    var mobileDiv = document.getElementById('Mobile');
+    
+    // Проверяем, есть ли такой элемент
+    if (mobileDiv) {
+        // Если элемент существует, удаляем его содержимое
+        mobileDiv.innerHTML = '';
+        
+        // Создаем элементы для сообщения и ссылки
+        var message = document.createElement('div');
+        message.style.cssText = 'position: fixed; top: 0; left: 0;height: 100%; width: 100%; background-color: #f44336; color: white; text-align: center; padding: 10px;display:flex;flex-direction: column;justify-content: center;';
+        message.innerHTML = 'Доступ разрешен только с мобильных устройств. Пожалуйста, используйте телеграм бота qr-code.';
+        
+        var link = document.createElement('a');
+        link.href = 'https://t.me/BurmaldaFuntestbot';
+        link.style.cssText = 'color: white; text-decoration: underline; margin-left: 10px;';
+        link.textContent = 'Перейти к телеграм боту';
+        
+        // Добавляем элементы на страницу в тег body
+        document.body.appendChild(message);
+        message.appendChild(link);
+    }
 }
 
 game_btn.addEventListener('click', function () {
