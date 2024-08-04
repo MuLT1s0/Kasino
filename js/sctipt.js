@@ -18,7 +18,7 @@ if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navig
         // Создаем элементы для сообщения и ссылки
         var message = document.createElement('div');
         message.style.cssText = 'position: fixed; top: 0; left: 0;height: 100%; width: 100%; background-color: #f44336; color: white; text-align: center; padding: 10px;display:flex;flex-direction: column;justify-content: center;';
-        message.innerHTML = 'Доступ разрешен только с мобильных устройств. Пожалуйста, используйте телеграм бота qr-code.';
+        message.innerHTML = 'Доступ разрешен только с мобильных устройств. Пожалуйста, используйте телеграм бота @BurmaldaFuntestbot.';
         
         var link = document.createElement('a');
         link.href = 'https://t.me/BurmaldaFuntestbot';
