@@ -5,6 +5,12 @@ var admin_btn = document.getElementById('admin_btn')
 
 // let input_stavka = document.querySelectorAll(".input_stavka")
 
+//Пробная версия защиты
+if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    // Если юзер не заходит с мобильного устройства, перенаправляем на другую страницу или показываем сообщение
+    window.location.href = "https://www.google.com/"; // Раскомментируйте, чтобы перенаправить на другую страницу
+}
+
 game_btn.addEventListener('click', function () {
     game_btn.className = "game active"
     profile_btn.className= "profile"
