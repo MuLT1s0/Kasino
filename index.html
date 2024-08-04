@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/96fac55e28.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="meinblock">
+            <div class="header">
+                <div class="header_left_block">
+                    Рулетка
+                </div>
+                <div class="header_right_block">
+                    <span>0</span>
+                    <div class="img_balans">
+                        <img src="/img/balans.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="mein_block">
+                <div class="rules_block">
+                    <div class="story_block">
+                        <div class="story_life_block green">
+                            &nbsp;
+                        </div>
+                        <div class="story_life_block red">
+                            &nbsp;
+                        </div>
+                        <div class="story_life_block white">
+                            &nbsp;
+                        </div>
+                        <div class="story_life_block red">
+                            &nbsp;
+                        </div>
+                        <div class="story_life_block goold">
+                            &nbsp;
+                        </div>
+                    </div>
+                    <div class="rules_games">
+                        <!-- <div class="rules" id="rules">
+                            <img src="/img/1233.png" alt=""> 
+                            <canvas id="wheelCanvas" width="250" height="250"></canvas> 
+                        </div>
+                        <div class="stick">
+                            &nbsp;
+                        </div>
+                        <div class="timer">
+                            <span id="timer">15</span>
+                        </div>
+                        <span id="result">&nbsp;</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="stavka">
+                <input type="value" min="10" max="10000" placeholder="0">
+                <div class="img_balans_stavka">
+                    <img src="/img/balans.png" alt="Баланс">
+                </div>
+            
+            </div>
+            <div class="stavka_rules">
+                <div class="white_btn">
+                    2x
+                </div>
+                <div class="red_btn">
+                    3x
+                </div>
+                <div class="green_btn">
+                    5x
+                </div>
+                <div class="gold_btn">
+                    10x
+                </div>
+            </div>
+            <div class="life_stavka">
+                <div class="white btn_white">
+                    <div class="white_titile">
+                        <div class="white_tile">
+                            2x
+                        </div>
+                        <div class="white_number">
+                            1
+                        </div>
+                    </div>
+                    <div class="white_block">
+                        <div class="profile_life_stavka">
+                            <div class="profile_life">
+                                <div class="profile_name">
+                                    test
+                                </div>
+                                <img src="/img/background.png" alt="">
+                            </div>
+                            <div class="stavka_value">
+                                <span>999</span>
+                                <img src="/img/balans.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="red btn_red">
+                    <div class="red_titile">
+                        <div class="red_tile">
+                            3x
+                        </div>
+                        <div class="red_number">
+                            1
+                        </div>
+                    </div>
+                    <div class="red_block">
+                        <div class="profile_life_stavka">
+                            <div class="profile_life">
+                                <div class="profile_name">
+                                    test
+                                </div>
+                                <img src="/img/background.png" alt="">
+                            </div>
+                            <div class="stavka_value">
+                                <span>999</span>
+                                <img src="/img/balans.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="green btn_green">
+                    <div class="green_titile">
+                        <div class="green_tile">
+                            5x
+                        </div>
+                        <div class="green_number">
+                            1
+                        </div>
+                    </div>
+                    <div class="green_block">
+                        <div class="profile_life_stavka">
+                            <div class="profile_life">
+                                <div class="profile_name">
+                                    test
+                                </div>
+                                <img src="/img/background.png" alt="">
+                            </div>
+                            <div class="stavka_value">
+                                <span>999</span>
+                                <img src="/img/balans.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goold btn_gold">
+                    <div class="goold_titile">
+                        <div class="goold_tile">
+                            10x
+                        </div>
+                        <div class="goold_number">
+                            1
+                        </div>
+                    </div>
+                    <div class="goold_block">
+                        <div class="profile_life_stavka">
+                            <div class="profile_life">
+                                <div class="profile_name">
+                                    test
+                                </div>
+                                <img src="/img/background.png" alt="">
+                            </div>
+                            <div class="stavka_value">
+                                <span>999</span>
+                                <img src="/img/balans.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="menu">
+                <div class="game active" id="game_btn">
+                    <div class="img_menu">
+                        <i class="fa-solid fa-dice-two"></i>
+                    </div>
+                    <div class="name_menu">
+                        Игры
+                    </div>
+                </div>
+                <div class="profile" id="profile_btn">
+                    <div class="img_menu">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="name_menu">
+                        Профиль
+                    </div>
+                </div>
+                <div class="bank" id="balans_btn">
+                    <div class="img_menu">
+                        <i class="fa-solid fa-vault"></i>
+                    </div>
+                    <div class="name_menu">
+                        Баланс
+                    </div>
+                </div>
+                <div class="admin" id="admin_btn">
+                    <div class="img_menu">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="name_menu">
+                        Админка
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="/js/sctipt.js"></script>
+</html>

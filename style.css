@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(21, 21, 21); 
+    font-family: "Futura PT",sans-serif;
+    color: #FFFFFF;
+    user-select: none;
+    /* background-image: url("/img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+/*Мейн блок*/
+.conteiner{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.header{
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    justify-content: space-between;
+}
+.header_left_block{
+    margin-top: 5px;
+    font-size: 25px;
+}
+.header_right_block{
+    margin-top: 5px;
+    font-size: 25px;
+    display: flex;
+    width: 15%;
+    justify-content: center
+}
+.mein_block{
+    margin-top: 5px;
+    height: 80%;
+}
+.story_block{
+    display: flex;
+    padding: 1.2%;
+}
+
+.story_life_block{
+    width: 20%;
+    text-align: center;
+    background-color: white;
+    margin: 1%;
+    border-radius: 25px;
+}
+.green{
+    background-color: rgb(47,198,139);
+}
+.white{
+    background-color: rgb(193,193, 193);
+}
+.red{
+    background-color: rgb(177, 28, 73);
+}
+.goold{
+    background-color: rgb(242,175,59);
+}
+.rules_block{
+    flex-direction: column;
+    display: flex;
+    height: 325px;
+    background-color: rgb(9, 9, 9);
+    border-radius: 25px;
+}
+.rules_games{
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    height: 100%;
+}
+img{
+    width: 10px;
+    height: 10px;
+}
+.rules{
+
+}
+#rules {
+    transition: transform 25s; /* Устанавливаем продолжительность вращения на 7 секунд */
+}
+#wheelCanvas {
+    display: block;
+    margin: 20px auto;
+    width: 250px;
+    height: 250px;
+}
+.rules img{
+    width: 258px;
+    height: 254px;
+}
+.timer{
+    font-size: 25px;
+    position: absolute;
+    top: 24%;
+}
+
+.stick{
+    top: 45%;
+    left: -2%;
+    position: relative;
+    background-color: #f00000;
+    width: 5%;
+    height: 2px;
+}
+.img_balans{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.img_balans img{
+    width: 25px;
+    height: 25px;
+}
+.stavka{
+    justify-content: space-around;
+    display: flex;
+    border-radius: 25px;
+    margin-top: 5px;
+    padding: 2%;
+    background-color: rgb(23,23,23);
+}
+.img_balans_stavka{
+    width: 25px;
+    height: 25px;
+}
+.img_balans_stavka img{
+    width: 30px;
+    height: 30px;
+}
+
+input{
+    border-radius: 10px;
+    color: white;
+    border: 0px solid wheat;
+    background: rgb(21,21,21);
+    text-align: center;
+    font-size: 25px;
+}
+footer {
+  background: rgb(21,21,21);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.stavka_rules{
+    padding: 1%;
+    border-radius: 15px;
+    background-color: rgb(23,23,23);
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.white_btn , .gold_btn , .red_btn ,.green_btn{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 2%;
+    width: 20%;
+    height: 25px;
+    text-align: center;
+    border-radius: 25px;
+    color: rgb(21, 21, 21);
+    font-size: 25px;
+}
+.stavka_rules :hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.white_btn{
+    background-color: rgb(193,193, 193);
+}
+.red_btn{
+    background-color: rgb(177, 28, 73);
+}
+.green_btn{
+    background-color: rgb(47,198,139);
+}
+.gold_btn{
+    background-color: rgb(242,175,59);
+}
+/*Ставки Лайф*/
+.life_stavka{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+.btn_red, .btn_gold, .btn_green, .btn_white{
+    border-radius: 8%;
+    width: 33%  ;
+    margin: 1%;
+    text-align: center;
+}
+.white_titile , .red_titile ,.green_titile , .goold_titile{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+.profile_life_stavka{
+    margin-top: 1%;
+    padding: 2%;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid rgb(255, 255, 255); */
+}
+.profile_name{
+    color: black;
+}
+.profile_life img{
+    width: 25px;
+    height: 25px;
+}
+.stavka_value img{
+    margin-left: 5px;
+    width: 25px;
+    height: 25px;
+}
+.stavka_value{
+    color: black;
+    display: flex;
+    align-items: center
+}
+/*нижный блок*/
+.menu{
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    font-size: 15px;
+}
+.game , .profile , .bank , .admin{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    width: 33%;
+}
+.menu :hover {
+    user-select: none;
+    cursor: pointer;
+    opacity: 0.8;
+    margin-bottom: 2px;
+    color: rgb(117, 117, 117);
+}
+.active{
+    color: rgb(117, 117, 117);
+    opacity: 0.8;
+    margin-bottom: 2px;
+}
+.game i, .profile i, .bank i, .admin i{
+    font-size: 28px;
+}
+.false{
+    display: none;
+}
